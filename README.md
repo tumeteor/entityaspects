@@ -1,1 +1,1 @@
-This repositorty contains the relevant assessment and code for our entity aspect recommendation work.
+This repositorty contains partly the code and relevant assessment for our temporal entity aspect recommendation work.
