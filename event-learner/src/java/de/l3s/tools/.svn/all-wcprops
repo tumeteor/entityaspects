@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/de/l3s/tools
+END
+Burst.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/de/l3s/tools/Burst.java
+END
+Cell.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/de/l3s/tools/Cell.java
+END
+SimpleBurstCollector.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/de/l3s/tools/SimpleBurstCollector.java
+END
+SubtopicEval.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/de/l3s/tools/SubtopicEval.java
+END
+QueryLogBurstDetector.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/de/l3s/tools/QueryLogBurstDetector.java
+END
+ThresholdingCollector.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/de/l3s/tools/ThresholdingCollector.java
+END
+LocalDateRange.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/de/l3s/tools/LocalDateRange.java
+END
+QueryClustering.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/de/l3s/tools/QueryClustering.java
+END
+BurstCollector.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/de/l3s/tools/BurstCollector.java
+END
+LocalDateBinner.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/de/l3s/tools/LocalDateBinner.java
+END
+BinningStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/de/l3s/tools/BinningStrategy.java
+END
+BurstDetector.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/de/l3s/tools/BurstDetector.java
+END
+WordNetSimCal.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/de/l3s/tools/WordNetSimCal.java
+END

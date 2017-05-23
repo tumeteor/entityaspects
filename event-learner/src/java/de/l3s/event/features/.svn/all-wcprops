@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/l3s/de/event/features
+END
+EventFeatures.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/l3s/de/event/features/EventFeatures.java
+END
+RFeatures.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/l3s/de/event/features/RFeatures.java
+END
+EventDistinctFeatures.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/l3s/de/event/features/EventDistinctFeatures.java
+END
+KLDivergence.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/l3s/de/event/features/KLDivergence.java
+END
+QueryLogFeatures.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/l3s/de/event/features/QueryLogFeatures.java
+END
+AutoCorrelation.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/asev/!svn/ver/191/Work/entity%20research/event-learner/src/main/java/l3s/de/event/features/AutoCorrelation.java
+END

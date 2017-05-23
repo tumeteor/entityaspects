@@ -1,0 +1,121 @@
+package de.l3s.tools;
+
+import java.io.IOException;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import org.apache.commons.lang.ArrayUtils;
+import org.joda.time.LocalDate;
+import org.joda.time.Period;
+
+import scala.actors.threadpool.Arrays;
+
+import com.google.common.collect.Range;
+import com.google.common.collect.Ranges;
+
+public class QueryLogBurstDetector {
+	private final BinningStrategy<LocalDate> binner = new LocalDateBinner();
+	private final double densityScaling =  1.5;
+	private final ArrayList<Integer> allQueryFreq = new ArrayList<Integer>();
+	private final double gamma = 1.0 ;
+	private final Period period = Period.days(1);;
+	private final int states = 1;
+	private final double threshold = 0.0;
+	private Range<LocalDate> timeRange;
+	
+	public static int[] AOLQueryFreq = {194270, 193166, 174561, 187500, 204781, 195542, 191979, 186704, 186467, 170881, 179476, 200703, 195598, 191157, 189206, 181466, 168326, 180857, 202299, 194153, 191562, 188006, 182499, 170712, 179924, 197948, 189091, 188752, 180729, 171966, 156886, 166246, 167825, 181209, 143107, 151390, 151511, 142058, 154214, 161267, 138061, 133851, 110293, 112925, 126409, 117365, 123859, 142332, 136364, 134911, 131774, 125122, 133909, 145749, 141998, 140122, 135832, 127689, 118098, 124517, 139862, 138850, 137941, 158194, 167449, 154824, 157955, 179577, 181748, 176669, 175288, 174788, 156827, 159445, 168565, 183859, 182491, 2006, 155202, 145605, 146466, 165878, 169559, 163630, 153144, 140620, 129912, 124740, 125839, 144681, 149247, 130920};
+    public static int[] MSNQueryFreq = {319539, 323658, 311808, 296883, 282056, 155717, 165941, 325086, 318472, 310903, 325635, 295456, 181928, 179509, 360079, 362249, 347281, 340996, 302900, 167191, 178195, 351301, 338048, 347509, 326918, 283985, 155584, 152210, 181892, 334319, 332151};
+
+	/**
+	 * 
+	 * @param conn
+	 */
+	public QueryLogBurstDetector(java.sql.Connection conn){
+		timeRange = Ranges.closed(binner.parseDate("2006-05-01"),
+				binner.parseDate("2006-05-31"));
+		for (LocalDate date : new LocalDateRange(binner.parseDate("2006-05-01"),
+				binner.parseDate("2006-05-31"))){
+			try {
+				String sqlStr = "SELECT COUNT(Query) AS qFreq FROM TemporalIR.msnqdf WHERE Date =?;";
+				PreparedStatement stm = conn.prepareStatement(sqlStr, PreparedStatement.RETURN_GENERATED_KEYS);
+				stm.setString(1, date.toString());
+				stm.executeQuery();
+				ResultSet rs = stm.getResultSet ();
+				rs.next();
+				allQueryFreq.add(rs.getInt("qFreq"));
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	/**
+	 * 
+	 * @param conn
+	 * @param start
+	 * @param end
+	 */
+	public QueryLogBurstDetector(java.sql.Connection conn, String start, String end){
+		timeRange = Ranges.closed(binner.parseDate(start),
+				binner.parseDate(end));
+		for (LocalDate date : new LocalDateRange(binner.parseDate(start),
+				binner.parseDate(end))){
+			try {
+				String sqlStr = "SELECT COUNT(Query) AS qFreq FROM TemporalIR.aolqdf WHERE Date =?;";
+				PreparedStatement stm = conn.prepareStatement(sqlStr, PreparedStatement.RETURN_GENERATED_KEYS);
+				stm.setString(1, date.toString());
+				stm.executeQuery();
+				ResultSet rs = stm.getResultSet ();
+				rs.next();
+				allQueryFreq.add(rs.getInt("qFreq"));
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	/**
+	 * 
+	 * @param conn
+	 * @param start
+	 * @param length
+	 */
+	public QueryLogBurstDetector(java.sql.Connection conn, String start, int length, String dataset){
+		LocalDate startDate = binner.parseDate(start);
+		LocalDate endDate = startDate.plusDays(length);
+		timeRange = Ranges.closed(startDate, endDate);
+		if(dataset.equals("msn")){
+			for(int ind = 0; ind < length; ind ++){
+				if(ind >= MSNQueryFreq.length) break;
+				allQueryFreq.add(MSNQueryFreq[ind]);
+			}
+		}else{
+			for(int ind = 0; ind < length; ind ++){
+				if(ind >= AOLQueryFreq.length) break;
+				allQueryFreq.add(AOLQueryFreq[ind]);
+			}
+		}
+	}
+    /**
+     * 
+     * @param query
+     * @param singleQueryFreq
+     * @return
+     */
+	public SimpleBurstCollector<String, LocalDate> detectTermBursts(String query, int[] singleQueryFreq){
+		SimpleBurstCollector<String, LocalDate> collector = SimpleBurstCollector
+		.create(timeRange);
+		BurstCollector<String, LocalDate> thresholdingCollector = ThresholdingCollector
+		.create(threshold, collector);
+		try {
+			BurstDetector.findBursts(query, singleQueryFreq, ArrayUtils.toPrimitive(allQueryFreq.toArray(new Integer[allQueryFreq.size()])), states, gamma,
+					densityScaling, thresholdingCollector, binner, timeRange);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return collector;
+
+	}
+}

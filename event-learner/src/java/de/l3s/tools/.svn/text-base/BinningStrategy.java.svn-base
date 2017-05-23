@@ -1,0 +1,19 @@
+package de.l3s.tools;
+
+import org.joda.time.DateTimeFieldType;
+import org.joda.time.ReadablePartial;
+
+public interface BinningStrategy<T extends ReadablePartial> {
+
+    public int getBin(T first, String current);
+
+    public int getBin(T first, T current);
+
+    public Class<T> getDateClass();
+
+    public DateTimeFieldType getBinningDateField();
+    
+    public T parseDate(String s);
+
+    public T binToDate(T first, int index);
+}

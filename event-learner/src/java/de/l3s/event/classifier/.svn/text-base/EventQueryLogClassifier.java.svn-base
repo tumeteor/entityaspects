@@ -1,0 +1,131 @@
+package l3s.de.event.classifier;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Random;
+
+import au.com.bytecode.opencsv.CSVReader;
+
+import weka.classifiers.AbstractClassifier;
+import weka.classifiers.Classifier;
+import weka.classifiers.Evaluation;
+import weka.classifiers.meta.FilteredClassifier;
+import weka.classifiers.trees.J48;
+import weka.classifiers.bayes.NaiveBayes;
+import weka.classifiers.functions.SMO;
+import weka.classifiers.functions.LibSVM;
+import weka.classifiers.functions.MultilayerPerceptron;
+import weka.core.Instances;
+import weka.core.Utils;
+import weka.core.converters.ConverterUtils.DataSink;
+import weka.filters.Filter;
+import weka.filters.supervised.attribute.AddClassification;
+import weka.filters.unsupervised.attribute.Add;
+import weka.filters.unsupervised.attribute.Normalize;
+import weka.filters.unsupervised.attribute.PrincipalComponents;
+import weka.filters.unsupervised.attribute.Remove;
+import weka.filters.unsupervised.attribute.ReplaceMissingValues;
+
+public class EventQueryLogClassifier {
+
+	public static void main (String[] args){
+		//partition by fix-time
+
+		// load training data
+		try {
+			weka.core.Instances data = new weka.core.Instances(new InputStreamReader(EventQueryLogClassifier.class.getResourceAsStream("/fix_time/training_data/aol_expl/aol_expl_par0521.arff")));
+			//Clean up training data
+			ReplaceMissingValues replace = new ReplaceMissingValues();
+			replace.setInputFormat(data);
+			Instances data_filter = Filter.useFilter(data, replace);   
+			int cIdx = data_filter.numAttributes()-1;
+			data_filter.setClassIndex(cIdx);
+			// filter
+			Remove rm = new Remove();
+			rm.setAttributeIndices("1");  // remove 1st attribute
+		
+			//pca 
+			PrincipalComponents pc = new PrincipalComponents();
+			Normalize normalize = new Normalize();
+			// build and evaluate classifier
+			//J48 classifier = new J48();
+			FilteredClassifier fc = new FilteredClassifier();
+			// using an unpruned J48
+			// classifier.setUnpruned(true);        
+			// Classifier classifier = new NaiveBayes();
+			// Classifier classifier = new SMO();
+			// MultilayerPerceptron classifier = new MultilayerPerceptron();
+			// meta-classifier
+			LibSVM classifier = new LibSVM();
+			// perform cross-validation
+			int runs = 1;
+			int folds = 10;
+			for (int i = 0; i < runs; i++) {
+				// randomize data
+				int seed = i + 1;
+				Random rand = new Random(seed);
+				Instances randData = new Instances(data_filter);
+				randData.randomize(rand);
+				if (randData.classAttribute().isNominal())
+					randData.stratify(folds);
+				Evaluation eval = new Evaluation(randData);
+				// perform cross-validation and add predictions
+				Instances predictedData = null;
+
+				for (int n = 0; n < folds; n++) {
+					Instances train = randData.trainCV(folds, n);
+					Instances test = randData.testCV(folds, n);
+					Classifier cls = AbstractClassifier.makeCopy(classifier);
+					// cls.buildClassifier(train);
+					// eval.evaluateModel(cls, test);
+					// the above code is used by the StratifiedRemoveFolds filter, the
+					// code below by the Explorer/Experimenter:
+					// Instances train = randData.trainCV(folds, n, rand);
+					fc.setFilter(rm);
+					fc.setFilter(pc);
+					fc.setFilter(normalize);
+					fc.setClassifier(cls);
+					fc.buildClassifier(train);
+					eval.evaluateModel(fc, test);
+					// output evaluation
+					// add predictions
+					AddClassification filter = new AddClassification();
+					filter.setClassifier(fc);
+					filter.setOutputClassification(true);
+					filter.setOutputDistribution(true);
+					filter.setOutputErrorFlag(true);
+					filter.setInputFormat(train);
+					Filter.useFilter(train, filter);  // trains the classifier
+					Instances pred = Filter.useFilter(test, filter);  // perform predictions on test set
+					if (predictedData == null)
+						predictedData = new Instances(pred, 0);
+					for (int j = 0; j < pred.numInstances(); j++)
+						predictedData.add(pred.instance(j));
+				}
+				 // output evaluation
+			    System.out.println();
+			    System.out.println("=== Setup ===");
+			    System.out.println("Classifier: " + fc.getClass().getName() + " " + Utils.joinOptions(fc.getOptions()));
+			    System.out.println("Dataset: " + data.relationName());
+			    System.out.println("Folds: " + folds);
+			    System.out.println("Seed: " + seed);
+			    System.out.println();
+			    System.out.println(eval.toSummaryString("=== " + folds + "-fold Cross-validation ===", false));
+			    for (int j = 0; j < predictedData.numInstances(); j++){
+			    	System.out.println(predictedData.instance(j));	    	
+			    }
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+}
