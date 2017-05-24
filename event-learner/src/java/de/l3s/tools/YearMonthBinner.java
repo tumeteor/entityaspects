@@ -7,8 +7,13 @@ import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
 public class YearMonthBinner implements BinningStrategy<YearMonth> {
-	private final DateTimeFormatter dateFormat = DateTimeFormat
-			.forPattern("YYYYMM");
+    private final DateTimeFormatter dateFormat = DateTimeFormat
+            .forPattern("YYYYMM");
+
+    public static void main(String[] args) {
+        YearMonthBinner binner = new YearMonthBinner();
+        System.out.println(binner.parseDate("2008-04-01").toString());
+    }
 
     @Override
     public YearMonth binToDate(final YearMonth first, final int index) {
@@ -37,17 +42,12 @@ public class YearMonthBinner implements BinningStrategy<YearMonth> {
 
     @Override
     public YearMonth parseDate(final String s) {
-		return YearMonth.parse(s.substring(0, 6), dateFormat);
+        return YearMonth.parse(s.substring(0, 6), dateFormat);
     }
 
-	public static void main(String[] args) {
-		YearMonthBinner binner = new YearMonthBinner();
-		System.out.println(binner.parseDate("2008-04-01").toString());
-	}
-
-	@Override
-	public YearMonth parseDate(String s, DateTimeFormatter dateFormat) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public YearMonth parseDate(String s, DateTimeFormatter dateFormat) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 }

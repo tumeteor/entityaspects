@@ -1,12 +1,11 @@
 package de.l3s.tools;
 
-import java.util.Collection;
-import java.util.List;
-
-import org.joda.time.ReadablePartial;
-
 import com.google.common.collect.Lists;
 import com.google.common.collect.Range;
+import org.joda.time.ReadablePartial;
+
+import java.util.Collection;
+import java.util.List;
 
 
 public class SimpleBurstCollector<O, T extends ReadablePartial> implements
@@ -15,13 +14,17 @@ public class SimpleBurstCollector<O, T extends ReadablePartial> implements
     private final T start;
     private final T end;
     private final List<Burst<O, T>> bursts = Lists.newArrayList();
+    private Burst<O, T> previousBurst = null;
 
     public SimpleBurstCollector(Range<T> dateRange) {
         this.start = dateRange.lowerEndpoint();
         this.end = dateRange.upperEndpoint();
     }
 
-    private Burst<O, T> previousBurst = null;
+    public static <O, U extends ReadablePartial> SimpleBurstCollector<O, U> create(
+            Range<U> dateRange) {
+        return new SimpleBurstCollector<O, U>(dateRange);
+    }
 
     @Override
     public void collect(Burst<O, T> burst) {
@@ -31,11 +34,6 @@ public class SimpleBurstCollector<O, T extends ReadablePartial> implements
             bursts.add(burst);
             previousBurst = burst;
         }
-    }
-
-    public static <O, U extends ReadablePartial> SimpleBurstCollector<O, U> create(
-            Range<U> dateRange) {
-        return new SimpleBurstCollector<O, U>(dateRange);
     }
 
     public Collection<Burst<O, T>> getBursts() {

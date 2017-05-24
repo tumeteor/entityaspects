@@ -1,13 +1,10 @@
 package de.l3s.tools;
 
-import java.io.IOException;
-import java.util.Collection;
-
-import org.joda.time.LocalDate;
+import com.google.common.collect.Range;
 import org.joda.time.ReadablePartial;
 
-import com.google.common.collect.Range;
-import com.google.common.collect.Ranges;
+import java.io.IOException;
+import java.util.Collection;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
@@ -15,13 +12,20 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 public class BurstDetector {
 
-   
+
+    private static final int MIN_SLENGTH = 0;
+    private static final double POWER_THRESH = 0;
+    /* Constant parameters of the burst detection algorithm */
+    //    private static final int MIN_SLENGTH = 0;
+    //    private static final double POWER_THRESH = 0;
+    //    private static final double HUGE_N = 1000000.0;
+    private static final double DTRANS = 1.0;
 
     public static <O, T extends ReadablePartial> void findBursts(O object,
-            int[] objectFrequencies, int[] documentFrequencies,
-            int inputStates, double gamma, double densityScaling,
-            BurstCollector<O, T> collector, BinningStrategy<T> binner,
-            Range<T> dateRange) throws IOException {
+                                                                 int[] objectFrequencies, int[] documentFrequencies,
+                                                                 int inputStates, double gamma, double densityScaling,
+                                                                 BurstCollector<O, T> collector, BinningStrategy<T> binner,
+                                                                 Range<T> dateRange) throws IOException {
 
         checkArgument(objectFrequencies.length == documentFrequencies.length,
                 "#objectFrequencies (%d) != #documentFrequencies (%d)",
@@ -61,8 +65,8 @@ public class BurstDetector {
     }
 
     private static <O, T extends ReadablePartial> Burst<O, T> toBurst(O object,
-            Cell cell, int level, int i, int n, BinningStrategy<T> binner,
-            Range<T> dateRange) {
+                                                                      Cell cell, int level, int i, int n, BinningStrategy<T> binner,
+                                                                      Range<T> dateRange) {
         T burstStart = binner.binToDate(dateRange.lowerEndpoint(), i);
 
         int endCell = cell.getBreakpoint(level);
@@ -74,21 +78,12 @@ public class BurstDetector {
         return Burst.of(object, burstStart, burstEnd, level, strength);
     }
 
-    private static final int MIN_SLENGTH = 0;
-    private static final double POWER_THRESH = 0;
-
     private static boolean isValidBurstCandidate(Cell currentCell, int level,
-            int binIndex) {
+                                                 int binIndex) {
         return (currentCell.getCandidate(level)
                 && currentCell.getBreakpoint(level) - binIndex + 1 >= MIN_SLENGTH && currentCell
                 .getTotalPower(level) >= POWER_THRESH);
     }
-
-    /* Constant parameters of the burst detection algorithm */
-    //    private static final int MIN_SLENGTH = 0;
-    //    private static final double POWER_THRESH = 0;
-    //    private static final double HUGE_N = 1000000.0;
-    private static final double DTRANS = 1.0;
 
     /* Updated parameters */
     //private final double gamma = 1.0;         // Parameter that controls the ease with which the 
@@ -98,7 +93,7 @@ public class BurstDetector {
     // the burst happens .
 
     public static Cell[] computeStates(int[] entry, int[] binBase, int burstStates,
-            double gamma, double densityScaling) {
+                                       double gamma, double densityScaling) {
 
         double transCost = computeTransCost(entry.length, gamma);
 
@@ -193,7 +188,7 @@ public class BurstDetector {
     }
 
     private static Cell[] computeCosts(int levels, int[] entry, int[] binBase,
-            double densityScaling) {
+                                       double densityScaling) {
         double expected = computeExpected(entry, binBase);
 
         double[] fRate = initializeFRate(expected, levels, densityScaling);
@@ -293,7 +288,7 @@ public class BurstDetector {
     }
 
     private static double[] initializeFRate(double expected, int levels,
-            double densityScaling) {
+                                            double densityScaling) {
         double[] fRate = new double[levels];
 
         fRate[levels - 1] = expected;
@@ -311,11 +306,9 @@ public class BurstDetector {
 
     /**
      * Compute the TODO what is transCost
-     * 
-     * @param n
-     *            number of buckets
-     * @param gamma
-     *            transition rate
+     *
+     * @param n     number of buckets
+     * @param gamma transition rate
      * @return the transCost
      */
     private static double computeTransCost(int n, double gamma) {
@@ -337,16 +330,18 @@ public class BurstDetector {
         }
 
         if (binN == 0 || binK == 0) {
-        	System.out.println(binN + " : " + binK);
+            System.out.println(binN + " : " + binK);
             throw new RuntimeException(
-"A word bursted on is never used");
+                    "A word bursted on is never used");
         }
 
         double expected = (double) binN / (double) binK;
         return expected;
     }
 
-    /** Compute the logarithm of choose(n,k) */
+    /**
+     * Compute the logarithm of choose(n,k)
+     */
     private static double logChoose(int n, int k) {
         int index;
         double value = 0.0;
@@ -366,7 +361,7 @@ public class BurstDetector {
             throw new IllegalArgumentException("probability >= 1.0, got "
                     + probability);
         }
-        return -1* (logChoose(n, k) + k * Math.log(probability) + 
+        return -1 * (logChoose(n, k) + k * Math.log(probability) +
                 (n - k) * Math.log(1.0 - probability));
     }
 

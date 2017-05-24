@@ -13,9 +13,9 @@ public interface BinningStrategy<T extends ReadablePartial> {
     public Class<T> getDateClass();
 
     public DateTimeFieldType getBinningDateField();
-    
+
     public T parseDate(String s);
-    
+
     public T parseDate(String s, DateTimeFormatter dateFormat);
 
     public T binToDate(T first, int index);

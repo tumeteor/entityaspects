@@ -1,87 +1,87 @@
 package de.l3s.tools;
 
 public class Cell {
-	private final double[] costs;
-	private final double[] totals;
-	private final int[] previousPaths;
-	private int path = 0;
-	private int minRateClass = 0;
-	private final boolean[] candidates;
-	private final int[] endCandidates;
-	private final boolean[] marks;
-	private final int[] breakpoints;
-	private final boolean[] subordinates;
-	private final double[] powers;
-	private final double[] totalPowers;
-	
-	public Cell(int levels) {
-		costs = new double[levels];
-		totals = new double[levels];
-		powers = new double[levels];
-		totalPowers = new double[levels];
-		previousPaths = new int[levels];
-		endCandidates = new int[levels];
-		breakpoints = new int[levels];
-		subordinates = new boolean[levels];
-		candidates = new boolean[levels];
-		marks = new boolean[levels];
-	}
-	
+    private final double[] costs;
+    private final double[] totals;
+    private final int[] previousPaths;
+    private final boolean[] candidates;
+    private final int[] endCandidates;
+    private final boolean[] marks;
+    private final int[] breakpoints;
+    private final boolean[] subordinates;
+    private final double[] powers;
+    private final double[] totalPowers;
+    private int path = 0;
+    private int minRateClass = 0;
+
+    public Cell(int levels) {
+        costs = new double[levels];
+        totals = new double[levels];
+        powers = new double[levels];
+        totalPowers = new double[levels];
+        previousPaths = new int[levels];
+        endCandidates = new int[levels];
+        breakpoints = new int[levels];
+        subordinates = new boolean[levels];
+        candidates = new boolean[levels];
+        marks = new boolean[levels];
+    }
+
     public double getCost(int level) {
         return costs[level];
-	}
+    }
 
     public double getTotal(int level) {
         return totals[level];
-	}
+    }
 
     public int getPreviousPath(int level) {
         return previousPaths[level];
-	}
+    }
 
-	public int getPath() {
-		return path;
-	}
+    public int getPath() {
+        return path;
+    }
 
-	public int getMinRateClass() {
-		return minRateClass;
-	}
+    public void setPath(int path) {
+        this.path = path;
+    }
+
+    public int getMinRateClass() {
+        return minRateClass;
+    }
+
+    public void setMinRateClass(int minRateClass) {
+        this.minRateClass = minRateClass;
+    }
 
     public boolean getCandidate(int level) {
         return candidates[level];
-	}
+    }
 
     public int getEndCandidate(int level) {
         return endCandidates[level];
-	}
+    }
 
     public boolean getMark(int level) {
         return marks[level];
-	}
+    }
 
     public int getBreakpoint(int level) {
         return breakpoints[level];
-	}
+    }
 
     public boolean getSubordinate(int level) {
         return subordinates[level];
-	}
+    }
 
     public double getPower(int level) {
         return powers[level];
-	}
+    }
 
     public double getTotalPower(int level) {
         return totalPowers[level];
-	}
-
-	public void setMinRateClass(int minRateClass) {
-		this.minRateClass = minRateClass;
-	}
-
-	public void setPath(int path) {
-		this.path = path;
-	}
+    }
 
     public void setBreakpoint(int level, int val) {
         breakpoints[level] = val;
