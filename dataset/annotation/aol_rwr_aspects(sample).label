@@ -144,38 +144,13 @@ jennifer nettles 2006 [20060319] [0,0, 5] [0,0, 1],paul walker interviews,-1: ir
 2006 ncaa [20060314] [19,0, 2] [1,0, 0],ncaa wrestling,1: relevant,2: very relevant,1: relevant
 ,,,,,,,,
 ,,,,,,,,
-,,,,,,,,
-2006 printable march madness brackets [20060314] [6,0, 0] [1,0, 0],2005 printable ncaa brackets,1: relevant,1: relevant,1: relevant
-2006 printable march madness brackets [20060314] [6,0, 0] [1,0, 0],brackets,2: very relevant,1: relevant,1: relevant
-2006 printable march madness brackets [20060314] [6,0, 0] [1,0, 0],march madness,-1: irrelevant,-1: irrelevant,-1: irrelevant
-2006 printable march madness brackets [20060314] [6,0, 0] [1,0, 0],march madness bracket,2: very relevant,1: relevant,1: relevant
-2006 printable march madness brackets [20060314] [6,0, 0] [1,0, 0],march madness brackets,2: very relevant,1: relevant,1: relevant
-2006 printable march madness brackets [20060314] [6,0, 0] [1,0, 0],march madness picks,2: very relevant,1: relevant,1: relevant
-2006 printable march madness brackets [20060314] [6,0, 0] [1,0, 0],march madness printable bracket,2: very relevant,1: relevant,1: relevant
-2006 printable march madness brackets [20060314] [6,0, 0] [1,0, 0],march madness schedule,2: very relevant,1: relevant,1: relevant
-2006 printable march madness brackets [20060314] [6,0, 0] [1,0, 0],ncaa brackets,2: very relevant,1: relevant,1: relevant
-2006 printable march madness brackets [20060314] [6,0, 0] [1,0, 0],ncaa march madness brackets,2: very relevant,1: relevant,1: relevant
-,,,,,,,,
-april fool's pranks [20060401] [16,0, 0] [2,0, 0],april fools,-1: irrelevant,-1: irrelevant,-1: irrelevant
-april fool's pranks [20060401] [16,0, 0] [2,0, 0],april fools day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-april fool's pranks [20060401] [16,0, 0] [2,0, 0],april fools joke,1: relevant,1: relevant,-1: irrelevant
-april fool's pranks [20060401] [16,0, 0] [2,0, 0],april fools jokes,1: relevant,1: relevant,-1: irrelevant
-april fool's pranks [20060401] [16,0, 0] [2,0, 0],high school pranks,1: relevant,1: relevant,-1: irrelevant
-april fool's pranks [20060401] [16,0, 0] [2,0, 0],phone pranks,1: relevant,1: relevant,-1: irrelevant
-april fool's pranks [20060401] [16,0, 0] [2,0, 0],pranks,1: relevant,1: relevant,-1: irrelevant
-,,,,,,,,
-april fools jokes [20060401] [63,83, 2] [3,1, 1],april fool's pranks,1: relevant,1: relevant,-1: irrelevant
-april fools jokes [20060401] [63,83, 2] [3,1, 1],april fools,-1: irrelevant,-1: irrelevant,-1: irrelevant
-april fools jokes [20060401] [63,83, 2] [3,1, 1],april fools day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-april fools jokes [20060401] [63,83, 2] [3,1, 1],april fools prank,1: relevant,1: relevant,-1: irrelevant
-april fools jokes [20060401] [63,83, 2] [3,1, 1],chuck noris jokes,1: relevant,1: relevant,-1: irrelevant
-april fools jokes [20060401] [63,83, 2] [3,1, 1],clean funny jokes,1: relevant,1: relevant,-1: irrelevant
-april fools jokes [20060401] [63,83, 2] [3,1, 1],free practical jokes,1: relevant,1: relevant,-1: irrelevant
-april fools jokes [20060401] [63,83, 2] [3,1, 1],funny jokes,1: relevant,1: relevant,-1: irrelevant
-april fools jokes [20060401] [63,83, 2] [3,1, 1],goodbye jokes,1: relevant,1: relevant,-1: irrelevant
-april fools jokes [20060401] [63,83, 2] [3,1, 1],yo mama jokes,1: relevant,1: relevant,-1: irrelevant
-april fools jokes [20060401] [63,83, 2] [3,1, 1],yo momma jokes,1: relevant,1: relevant,-1: irrelevant
-april fools jokes [20060401] [63,83, 2] [3,1, 1],your mamma jokes,1: relevant,1: relevant,-1: irrelevant
+april fools [20060401] [63,83, 2] [3,1, 1],april fool's pranks,1: relevant,1: relevant,-1: irrelevant
+april fools [20060401] [63,83, 2] [3,1, 1],chuck noris jokes,1: relevant,1: relevant,-1: irrelevant
+april fools [20060401] [63,83, 2] [3,1, 1],clean funny jokes,1: relevant,1: relevant,-1: irrelevant
+april fools [20060401] [63,83, 2] [3,1, 1],free practical jokes,1: relevant,1: relevant,-1: irrelevant
+april fools [20060401] [63,83, 2] [3,1, 1],funny jokes,1: relevant,1: relevant,-1: irrelevant
+april fools [20060401] [63,83, 2] [3,1, 1],goodbye jokes,1: relevant,1: relevant,-1: irrelevant
+april fools [20060401] [63,83, 2] [3,1, 1],yo mama jokes,1: relevant,1: relevant,-1: irrelevant
 ,,,,,,,,
 daylight savings 2006 [20060402-20061029] [6,0, 0] [2,0, 0],daylight saving time,2: very relevant,1: relevant,1: relevant
 daylight savings 2006 [20060402-20061029] [6,0, 0] [2,0, 0],daylight savings time,2: very relevant,1: relevant,1: relevant
@@ -234,41 +209,23 @@ ncaa basketball tournament 2006 [20060316-20060403] [7,2, 0] [1,1, 0],ncaa wrest
 ncaa basketball tournament 2006 [20060316-20060403] [7,2, 0] [1,1, 0],women's basketball,1: relevant,1: relevant,1: relevant
 ,,,,,,,,
 ,,,,,,,,
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],2006 ncaa bracket,2: very relevant,1: relevant,1: relevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],2006 ncaa brackets,2: very relevant,1: relevant,1: relevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],2006 ncaa tournament,-1: irrelevant,-1: irrelevant,-1: irrelevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],march madness,1: relevant,1: relevant,1: relevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],march madness bracket,2: very relevant,1: relevant,1: relevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],march madness brackets,2: very relevant,1: relevant,1: relevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],march madness results,-1: irrelevant,1: relevant,2: very relevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],march madness schedule,2: very relevant,1: relevant,-1: irrelevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa,-1: irrelevant,-1: irrelevant,-1: irrelevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa baseball,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa baseball tournament,-1: irrelevant,-1: irrelevant,-1: irrelevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa basketball,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa basketball bracket,2: very relevant,1: relevant,1: relevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa basketball champions,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa basketball results,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa basketball tournament,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa basketball tourney,-1: irrelevant,-1: irrelevant,-1: irrelevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa bracket,2: very relevant,1: relevant,1: relevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa bracket 2006,2: very relevant,1: relevant,1: relevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa brackets,2: very relevant,1: relevant,1: relevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa brakets,2: very relevant,1: relevant,1: relevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa championships,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa final four,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa game times,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa lacrosse,-1: irrelevant,-1: irrelevant,-1: irrelevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa lacrosse tournament,-1: irrelevant,-1: irrelevant,-1: irrelevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa men's basketball,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa mens basketball,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa softball scores,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa sports,-1: irrelevant,-1: irrelevant,-1: irrelevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa sports.com,-1: irrelevant,-1: irrelevant,-1: irrelevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa tournament,-1: irrelevant,-1: irrelevant,-1: irrelevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa tournament brackets,2: very relevant,1: relevant,1: relevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa tournament scores,-1: irrelevant,-1: irrelevant,-1: irrelevant
-ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa tourney,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa women's bracket,2: very relevant,1: relevant,1: relevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa women's championship,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ncaa march madness [20060314] [6,2, 25] [1,0, 2],ncaa women's lacrosse,-1: irrelevant,-1: irrelevant,-1: irrelevant
@@ -452,13 +409,6 @@ american idol   [20060117-20060524] [0,23, 19] [0,0, 1],poison concert tickets,-
 american idol   [20060117-20060524] [0,23, 19] [0,0, 1],radiohead tickets,-1: irrelevant,-1: irrelevant,-1: irrelevant
 american idol   [20060117-20060524] [0,23, 19] [0,0, 1],reggaeton concert,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ,,,,,,,,
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],ameican idol,-1: irrelevant,-1: irrelevant,-1: irrelevant
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],amercian idol,-1: irrelevant,-1: irrelevant,-1: irrelevant
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],america idol,-1: irrelevant,-1: irrelevant,-1: irrelevant
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],americal idol,-1: irrelevant,-1: irrelevant,-1: irrelevant
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idiol.com,-1: irrelevant,-1: irrelevant,-1: irrelevant
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american ido,-1: irrelevant,-1: irrelevant,-1: irrelevant
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol .com,-1: irrelevant,-1: irrelevant,-1: irrelevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol 5,-1: irrelevant,-1: irrelevant,-1: irrelevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol and results,-1: irrelevant,2: very relevant,2: very relevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol blog,-1: irrelevant,1: relevant,1: relevant
@@ -469,10 +419,8 @@ american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol finale,-1:
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol kevin,0: don't know,0: don't know,0: don't know
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol news,1: relevant,1: relevant,1: relevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol on fox,-1: irrelevant,-1: irrelevant,-1: irrelevant
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol on fox.com,-1: irrelevant,-1: irrelevant,-1: irrelevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol performances,-1: irrelevant,2: very relevant,1: relevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol photos,-1: irrelevant,1: relevant,1: relevant
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol pictures,-1: irrelevant,1: relevant,1: relevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol poll,-1: irrelevant,2: very relevant,-1: irrelevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol season 4,-1: irrelevant,-1: irrelevant,-1: irrelevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol season 5,-1: irrelevant,-1: irrelevant,-1: irrelevant
@@ -480,13 +428,9 @@ american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol show resul
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol tonight,-1: irrelevant,2: very relevant,1: relevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol tour,-1: irrelevant,1: relevant,1: relevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol voting,-1: irrelevant,2: very relevant,-1: irrelevant
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol website,-1: irrelevant,-1: irrelevant,-1: irrelevant
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol.com,-1: irrelevant,-1: irrelevant,-1: irrelevant
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idole,-1: irrelevant,-1: irrelevant,-1: irrelevant
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idols,-1: irrelevant,-1: irrelevant,-1: irrelevant
+american idol  [20060117-20060524] [0,397, 6] [0,12, 1],american idol website,-1: irrelevant,-1: irrelevant,-1: irrel
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],chris american idol,0: don't know,0: don't know,0: don't know
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],fox american idol,-1: irrelevant,-1: irrelevant,-1: irrelevant
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],http american idol.com,-1: irrelevant,-1: irrelevant,-1: irrelevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],idol,-1: irrelevant,-1: irrelevant,-1: irrelevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],idol american,-1: irrelevant,-1: irrelevant,-1: irrelevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],idol chat,-1: irrelevant,1: relevant,1: relevant
@@ -496,7 +440,6 @@ american idol  [20060117-20060524] [0,397, 6] [0,12, 1],taylor american idol,0: 
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],vote american idol.com,-1: irrelevant,2: very relevant,-1: irrelevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],who got voted off american idol tonight,-1: irrelevant,2: very relevant,-1: irrelevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],who was voted off american idol tonight,-1: irrelevant,2: very relevant,-1: irrelevant
-american idol  [20060117-20060524] [0,397, 6] [0,12, 1],www.american idol,-1: irrelevant,-1: irrelevant,-1: irrelevant
 american idol  [20060117-20060524] [0,397, 6] [0,12, 1],www.american idol .com,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ,,,,,,,,
 americas next top model [20060308-20060517] [25,380, 75] [0,12, 4],america next top model.com,1: relevant,1: relevant,1: relevant
@@ -723,7 +666,6 @@ easter  [20060416-20060423] [259,89, 22] [6,1, 0],easter quotes,-1: irrelevant,-
 easter  [20060416-20060423] [259,89, 22] [6,1, 0],easter recipes,-1: irrelevant,-1: irrelevant,-1: irrelevant
 easter  [20060416-20060423] [259,89, 22] [6,1, 0],history of easter,-1: irrelevant,-1: irrelevant,-1: irrelevant
 easter  [20060416-20060423] [259,89, 22] [6,1, 0],the easter bunny,2: very relevant,1: relevant,-1: irrelevant
-easter  [20060416-20060423] [259,89, 22] [6,1, 0],what is easter,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ,,,,,,,,
 easter  [20060416-20060423] [99,0, 0] [3,0, 0],cat litter cakes,-1: irrelevant,-1: irrelevant,-1: irrelevant
 easter  [20060416-20060423] [99,0, 0] [3,0, 0],cheese cakes,-1: irrelevant,-1: irrelevant,-1: irrelevant
@@ -776,15 +718,9 @@ grey's anatomy [20060301-20060531] [0,765, 0] [0,27, 0],greys anatomy finale,-1:
 greys anatomy [20060301-20060531] [0,603, 0] [0,20, 0],greys anatomy finale,-1: irrelevant,2: very relevant,2: very relevant
 greys anatomy [20060301-20060531] [0,603, 0] [0,20, 0],greys anatomy quotes,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ,,,,,,,,
-happy mothers day [20060514] [41,66, 0] [0,1, 0],free mothers day cards,2: very relevant,1: relevant,-1: irrelevant
-happy mothers day [20060514] [41,66, 0] [0,1, 0],free mothers day greeting cards,2: very relevant,1: relevant,-1: irrelevant
 happy mothers day [20060514] [41,66, 0] [0,1, 0],mother day cards,2: very relevant,1: relevant,-1: irrelevant
-happy mothers day [20060514] [41,66, 0] [0,1, 0],mother's day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-happy mothers day [20060514] [41,66, 0] [0,1, 0],mother's day cards,2: very relevant,1: relevant,-1: irrelevant
-happy mothers day [20060514] [41,66, 0] [0,1, 0],mothers day,-1: irrelevant,-1: irrelevant,-1: irrelevant
 happy mothers day [20060514] [41,66, 0] [0,1, 0],mothers day breakfast,0: don't know,0: don't know,0: don't know
 happy mothers day [20060514] [41,66, 0] [0,1, 0],mothers day cards,2: very relevant,1: relevant,-1: irrelevant
-happy mothers day [20060514] [41,66, 0] [0,1, 0],mothers day clip art,-1: irrelevant,-1: irrelevant,-1: irrelevant
 happy mothers day [20060514] [41,66, 0] [0,1, 0],mothers day clipart,2: very relevant,1: relevant,-1: irrelevant
 happy mothers day [20060514] [41,66, 0] [0,1, 0],mothers day graphics,2: very relevant,1: relevant,-1: irrelevant
 happy mothers day [20060514] [41,66, 0] [0,1, 0],mothers day greeting cards,2: very relevant,1: relevant,-1: irrelevant
@@ -798,9 +734,6 @@ harry potter and the goblet of fire [20060307] [12,2, 95] [0,0, 3],harry potter 
 harry potter and the goblet of fire [20060307] [12,2, 95] [0,0, 3],harry potter 5,-1: irrelevant,1: relevant,2: very relevant
 harry potter and the goblet of fire [20060307] [12,2, 95] [0,0, 3],harry potter and the chamber of secrets,-1: irrelevant,-1: irrelevant,-1: irrelevant
 harry potter and the goblet of fire [20060307] [12,2, 95] [0,0, 3],harry potter and the order of phoenix,-1: irrelevant,1: relevant,2: very relevant
-harry potter and the goblet of fire [20060307] [12,2, 95] [0,0, 3],harry potter and the order of the phoenix,-1: irrelevant,1: relevant,2: very relevant
-harry potter and the goblet of fire [20060307] [12,2, 95] [0,0, 3],harry potter and the order of the phoenix movie,-1: irrelevant,1: relevant,2: very relevant
-harry potter and the goblet of fire [20060307] [12,2, 95] [0,0, 3],harry potter and the order of the phonix movie,-1: irrelevant,1: relevant,2: very relevant
 harry potter and the goblet of fire [20060307] [12,2, 95] [0,0, 3],harry potter movie 5,-1: irrelevant,1: relevant,2: very relevant
 harry potter and the goblet of fire [20060307] [12,2, 95] [0,0, 3],harry potter order of the pheonix movie,-1: irrelevant,1: relevant,2: very relevant
 harry potter and the goblet of fire [20060307] [12,2, 95] [0,0, 3],harry potter screensavers,-1: irrelevant,-1: irrelevant,-1: irrelevant
@@ -861,7 +794,6 @@ kingdom hearts [20060328] [175,2, 454] [1,0, 2],kingdom hearts 2 lyrics,-1: irre
 kingdom hearts [20060328] [175,2, 454] [1,0, 2],kingdom hearts 2 official site,-1: irrelevant,1: relevant,2: very relevant
 kingdom hearts [20060328] [175,2, 454] [1,0, 2],kingdom hearts 2.com,-1: irrelevant,1: relevant,2: very relevant
 kingdom hearts [20060328] [175,2, 454] [1,0, 2],kingdom hearts hints,-1: irrelevant,-1: irrelevant,-1: irrelevant
-kingdom hearts [20060328] [175,2, 454] [1,0, 2],kingdom hearts ii,-1: irrelevant,1: relevant,2: very relevant
 kingdom hearts [20060328] [175,2, 454] [1,0, 2],kingdom hearts ultimania,-1: irrelevant,-1: irrelevant,-1: irrelevant
 kingdom hearts [20060328] [175,2, 454] [1,0, 2],kingdom hearts.com,1: relevant,1: relevant,1: relevant
 kingdom hearts [20060328] [175,2, 454] [1,0, 2],kingdom of hearts 2,-1: irrelevant,1: relevant,2: very relevant
@@ -870,8 +802,6 @@ kingdom hearts [20060328] [175,2, 454] [1,0, 2],kingdom of hearts2.com,-1: irrel
 kingdom hearts [20060328] [175,2, 454] [1,0, 2],www. kingdom hearts.com,1: relevant,1: relevant,1: relevant
 ,,,,,,,,
 kingdom hearts 2 [20060328] [384,50, 857] [9,0, 11],battlefield 2 ps2,-1: irrelevant,-1: irrelevant,-1: irrelevant
-kingdom hearts 2 [20060328] [384,50, 857] [9,0, 11],cheat and codes for kingdom hearts 2,-1: irrelevant,1: relevant,2: very relevant
-kingdom hearts 2 [20060328] [384,50, 857] [9,0, 11],cheats and codes for kingdom hearts 2,-1: irrelevant,1: relevant,2: very relevant
 kingdom hearts 2 [20060328] [384,50, 857] [9,0, 11],cheats and walkthrough for kingdom hearts 2,-1: irrelevant,1: relevant,2: very relevant
 kingdom hearts 2 [20060328] [384,50, 857] [9,0, 11],halo 2,-1: irrelevant,-1: irrelevant,-1: irrelevant
 kingdom hearts 2 [20060328] [384,50, 857] [9,0, 11],halo 2 pictures,-1: irrelevant,-1: irrelevant,-1: irrelevant
@@ -891,31 +821,6 @@ kingdom hearts 2 [20060328] [384,50, 857] [9,0, 11],kingdom of hearts 2,-1: irre
 kingdom hearts 2 [20060328] [384,50, 857] [9,0, 11],kingdom of hearts.com,-1: irrelevant,-1: irrelevant,-1: irrelevant
 kingdom hearts 2 [20060328] [384,50, 857] [9,0, 11],kingdom of hearts2.com,-1: irrelevant,1: relevant,2: very relevant
 kingdom hearts 2 [20060328] [384,50, 857] [9,0, 11],nba ballers 2,-1: irrelevant,-1: irrelevant,-1: irrelevant
-,,,,,,,,
-march madness [20060314] [110,41, 274] [9,3, 9],2006 printable march madness brackets,2: very relevant,1: relevant,1: relevant
-march madness [20060314] [110,41, 274] [9,3, 9],march madness bracket,2: very relevant,1: relevant,1: relevant
-march madness [20060314] [110,41, 274] [9,3, 9],march madness brackets,2: very relevant,1: relevant,1: relevant
-march madness [20060314] [110,41, 274] [9,3, 9],march madness printable bracket,2: very relevant,1: relevant,1: relevant
-march madness [20060314] [110,41, 274] [9,3, 9],march madness results,-1: irrelevant,2: very relevant,2: very relevant
-march madness [20060314] [110,41, 274] [9,3, 9],march madness schedule,-1: irrelevant,2: very relevant,2: very relevant
-march madness [20060314] [110,41, 274] [9,3, 9],march madness scores,-1: irrelevant,2: very relevant,2: very relevant
-march madness [20060314] [110,41, 274] [9,3, 9],ncaa march madness,1: relevant,1: relevant,1: relevant
-,,,,,,,,
-march madness brackets [20060314] [49,2, 28] [3,0, 2],2006 ncaa brackets,2: very relevant,1: relevant,1: relevant
-march madness brackets [20060314] [49,2, 28] [3,0, 2],2006 printable march madness brackets,2: very relevant,1: relevant,1: relevant
-march madness brackets [20060314] [49,2, 28] [3,0, 2],brackets,-1: irrelevant,-1: irrelevant,-1: irrelevant
-march madness brackets [20060314] [49,2, 28] [3,0, 2],college basketball brackets,2: very relevant,1: relevant,1: relevant
-march madness brackets [20060314] [49,2, 28] [3,0, 2],march madness,-1: irrelevant,-1: irrelevant,-1: irrelevant
-march madness brackets [20060314] [49,2, 28] [3,0, 2],march madness picks,-1: irrelevant,1: relevant,2: very relevant
-march madness brackets [20060314] [49,2, 28] [3,0, 2],march madness printable bracket,2: very relevant,1: relevant,1: relevant
-march madness brackets [20060314] [49,2, 28] [3,0, 2],march madness results,-1: irrelevant,1: relevant,2: very relevant
-march madness brackets [20060314] [49,2, 28] [3,0, 2],march madness schedule,2: very relevant,1: relevant,-1: irrelevant
-march madness brackets [20060314] [49,2, 28] [3,0, 2],ncaa basketball brackets,-1: irrelevant,-1: irrelevant,-1: irrelevant
-march madness brackets [20060314] [49,2, 28] [3,0, 2],ncaa brackets,-1: irrelevant,-1: irrelevant,-1: irrelevant
-march madness brackets [20060314] [49,2, 28] [3,0, 2],ncaa march madness,-1: irrelevant,-1: irrelevant,-1: irrelevant
-march madness brackets [20060314] [49,2, 28] [3,0, 2],ncaa march madness brackets,2: very relevant,1: relevant,1: relevant
-march madness brackets [20060314] [49,2, 28] [3,0, 2],ncaa tournament brackets,-1: irrelevant,-1: irrelevant,-1: irrelevant
-march madness brackets [20060314] [49,2, 28] [3,0, 2],ncaa tourney brackets,-1: irrelevant,-1: irrelevant,-1: irrelevant
 ,,,,,,,,
 mardi gras [20060228] [0,0, 276] [0,0, 1],mardi gras beads,-1: irrelevant,1: relevant,2: very relevant
 mardi gras [20060228] [0,0, 276] [0,0, 1],mardi gras pictures,-1: irrelevant,1: relevant,2: very relevant
@@ -991,27 +896,12 @@ mother's day [20060514] [522,53, 3] [12,1, 0],mother day gifts,2: very relevant,
 mother's day [20060514] [522,53, 3] [12,1, 0],mother day poems,2: very relevant,1: relevant,-1: irrelevant
 mother's day [20060514] [522,53, 3] [12,1, 0],mother's day kid crafts,2: very relevant,1: relevant,-1: irrelevant
 mother's day [20060514] [522,53, 3] [12,1, 0],mother's day poem,2: very relevant,1: relevant,-1: irrelevant
-mother's day [20060514] [522,53, 3] [12,1, 0],mother's day poems,2: very relevant,1: relevant,-1: irrelevant
-mother's day [20060514] [522,53, 3] [12,1, 0],mothers day poem,2: very relevant,1: relevant,-1: irrelevant
-mother's day [20060514] [522,53, 3] [12,1, 0],mothers day poems,2: very relevant,1: relevant,-1: irrelevant
 mother's day [20060514] [522,53, 3] [12,1, 0],mothers day quotes,2: very relevant,1: relevant,-1: irrelevant
-mother's day [20060514] [522,53, 3] [12,1, 0],poem for mother's day,2: very relevant,1: relevant,-1: irrelevant
-mother's day [20060514] [522,53, 3] [12,1, 0],poems for mothers day,2: very relevant,1: relevant,-1: irrelevant
 mother's day [20060514] [522,53, 3] [12,1, 0],saint patricks day,-1: irrelevant,-1: irrelevant,-1: irrelevant
 mother's day [20060514] [522,53, 3] [12,1, 0],st patrick day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mother's day [20060514] [522,53, 3] [12,1, 0],st patrick's day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mother's day [20060514] [522,53, 3] [12,1, 0],st patricks day,-1: irrelevant,-1: irrelevant,-1: irrelevant
 mother's day [20060514] [522,53, 3] [12,1, 0],st patricks day printables,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mother's day [20060514] [522,53, 3] [12,1, 0],st patty's day,-1: irrelevant,-1: irrelevant,-1: irrelevant
 mother's day [20060514] [522,53, 3] [12,1, 0],st. pat's day cards,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mother's day [20060514] [522,53, 3] [12,1, 0],st. patrick's day,-1: irrelevant,-1: irrelevant,-1: irrelevant
 mother's day [20060514] [522,53, 3] [12,1, 0],st. patricks day games,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mother's day [20060514] [522,53, 3] [12,1, 0],st. patty's day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mother's day [20060514] [522,53, 3] [12,1, 0],st.patrick's day printables,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mother's day [20060514] [522,53, 3] [12,1, 0],st.patricks day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mother's day [20060514] [522,53, 3] [12,1, 0],when is father's day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mother's day [20060514] [522,53, 3] [12,1, 0],when is mother's day,2: very relevant,1: relevant,1: relevant
-mother's day [20060514] [522,53, 3] [12,1, 0],when is mothers day,2: very relevant,1: relevant,1: relevant
 ,,,,,,,,
 mothers day [20060514] [704,49, 34] [18,0, 0],april fools day,-1: irrelevant,-1: irrelevant,-1: irrelevant
 mothers day [20060514] [704,49, 34] [18,0, 0],earth day,-1: irrelevant,-1: irrelevant,-1: irrelevant
@@ -1021,45 +911,8 @@ mothers day [20060514] [704,49, 34] [18,0, 0],earth day worksheets,-1: irrelevan
 mothers day [20060514] [704,49, 34] [18,0, 0],father's day,-1: irrelevant,-1: irrelevant,-1: irrelevant
 mothers day [20060514] [704,49, 34] [18,0, 0],father's day crafts,-1: irrelevant,-1: irrelevant,-1: irrelevant
 mothers day [20060514] [704,49, 34] [18,0, 0],fathers day poems,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],free mother's day poetry,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],free mothers day cards,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],free mothers day greeting cards,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],independence day,-1: irrelevant,-1: irrelevant,-1: irrelevant
 mothers day [20060514] [704,49, 34] [18,0, 0],labor day,-1: irrelevant,-1: irrelevant,-1: irrelevant
 mothers day [20060514] [704,49, 34] [18,0, 0],memorial day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mother day cards,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mother day poems,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mother's day cards,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mother's day e cards,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mother's day kid crafts,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mother's day poem,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mother's day poems,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mothers day cards,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mothers day coloring pages,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mothers day gifts,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mothers day poem,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mothers day poem from kids,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mothers day poems,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mothers day poems for kids,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],mothers poems,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],poem for mother's day,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],poems for mothers day,2: very relevant,1: relevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],saint patricks day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],st patrick day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],st patrick's day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],st patricks day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],st patricks day printables,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],st patty's day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],st. pat's day cards,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],st. patrick's day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],st. patricks day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],st. patricks day games,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],st. patty's day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],st.patrick's day printables,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],st.patricks day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],when is father's day,-1: irrelevant,-1: irrelevant,-1: irrelevant
-mothers day [20060514] [704,49, 34] [18,0, 0],when is mother's day,2: very relevant,1: relevant,1: relevant
-mothers day [20060514] [704,49, 34] [18,0, 0],when is mothers day,2: very relevant,1: relevant,1: relevant
 ,,,,,,,,
 ,,,,,,,,
 nasdaq tennis [20060320-20060402] [6,67, 1] [0,5, 0],nasdaq 100,1: relevant,1: relevant,1: relevant
@@ -1071,7 +924,6 @@ nasdaq tennis [20060320-20060402] [6,67, 1] [0,5, 0],nasdaq100 tennis,-1: irrele
 nba  2006 [20060423] [112,1, 77] [2,0, 2],2006 mock nba draft,1: relevant,1: relevant,1: relevant
 nba  2006 [20060423] [112,1, 77] [2,0, 2],2006 nba mock draft,1: relevant,1: relevant,1: relevant
 nba  2006 [20060423] [112,1, 77] [2,0, 2],2006 nba ,-1: irrelevant,1: relevant,2: very relevant
-nba  2006 [20060423] [112,1, 77] [2,0, 2],draft,-1: irrelevant,-1: irrelevant,-1: irrelevant
 nba  2006 [20060423] [112,1, 77] [2,0, 2],mock nba draft,1: relevant,1: relevant,1: relevant
 nba  2006 [20060423] [112,1, 77] [2,0, 2],nba 2006 mock draft,1: relevant,1: relevant,1: relevant
 nba  2006 [20060423] [112,1, 77] [2,0, 2],nba mock draft,1: relevant,1: relevant,1: relevant
